@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS <%= @database_name %>;
+CREATE DATABASE <%= @database_name %>;
+GRANT ALL PRIVILEGES ON <%= @database_name %>.* TO '<%= @database_user %>'@'localhost' IDENTIFIED BY '<%= @database_password %>';
